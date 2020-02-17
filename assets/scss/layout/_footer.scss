@@ -1,1 +1,56 @@
 // Footer layout
+
+.footer {
+    background-color: $raising-black;
+    color: $silver-chalice;
+    text-align: center; 
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;   
+    padding-top: 15px;  
+    height: 6rem; 
+    align-items: center;
+
+    a {
+        color: $gray;
+        font-size: $small;
+    }
+}
+
+.footer__p {
+    display: inline-block;
+}
+
+
+.footer__item {
+    width: 100%;
+    display: inline-block;
+    flex-grow: 1;
+}
+
+.footer__item-1 {
+    justify-content: flex-start ;
+}
+
+.footer__item-2 {
+    justify-content: flex-end;
+
+    i {
+        display: inline-block;
+    }
+    p{
+        display: inline-block;
+    }
+} 
+
+/* Desktop */ 
+
+@media (min-width: 992px) {
+
+    .footer__item {
+        width: 40%;    
+    }
+
+    
+} 
+

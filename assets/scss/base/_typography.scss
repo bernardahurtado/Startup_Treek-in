@@ -1,2 +1,37 @@
 /* Base Typography*/
 
+h1 {
+    font-family: $raleway;
+    font-weight: $bold;
+    font-size: $xxx-large;
+    color: $raising-black;
+}
+
+h2 {
+    font-family: $raleway;
+    font-weight: $bold;
+    font-size: $xx-large;
+    color: $raising-black;
+}
+
+h3 {
+    font-family: $raleway;
+    font-weight: $bold;
+    font-size: $x-large;
+    color: $raising-black;
+}
+
+h4 {
+    font-family: $raleway;
+    font-weight: $bold;
+    font-size: $large;
+    color: $raising-black;    
+}
+
+p {
+    font-family: $raleway;
+    font-weight: $regular;
+    font-size: $medium;
+    color: $raising-black;
+    line-height: 27px;
+}

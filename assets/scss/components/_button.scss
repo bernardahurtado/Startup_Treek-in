@@ -1,0 +1,29 @@
+// Components Button
+
+.button {
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-primary {
+    border: none; 
+    border-color: $ball-blue ;  
+    color: $white;
+    background-color: $ball-blue;
+    
+    &:hover {
+        background-color: $blue-lagoon;
+        box-shadow: none;
+    }
+
+    &:focus {
+        background-color: $lavender-gray;
+        box-shadow: none;
+    }
+    &:not(:disabled):not(.disabled):active:focus:active:focus { /*Para sacar el active que viene por defecto en boostrap*/
+        box-shadow: none;
+    }
+}

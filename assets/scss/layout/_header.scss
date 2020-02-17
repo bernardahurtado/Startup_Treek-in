@@ -1,1 +1,66 @@
 // Header layout
+
+ .header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.header__hero-sec {    
+    position: relative;
+    width: 100%;
+    height: 45rem;
+    margin-top: 4rem;
+}
+
+.header__img-movil {
+    background-image: url("../img/bg-hero.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    width: 100%;
+    height: 20rem;
+    margin-top: 20rem;
+}
+
+.header__text {
+    width: 77%;
+    position: absolute;
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: 3rem;   
+}
+
+
+@media (min-width: 990px) {
+
+    .header__hero-sec {
+        background-image: url('../img/bg-hero.svg');
+        background-size: cover;   
+        background-repeat: no-repeat;
+        background-position-x: 0;
+        background-position: center;
+        position: relative;
+        width: 100%;
+        height: 52rem;
+        margin-top: 4rem;
+    }
+     
+    .header__img-movil {
+        display: none;
+    }
+  
+    .header__text {
+        width: 29%;
+        margin-left: 7rem;
+        margin-top: 5rem;  
+
+        h1 {
+            font-size: 50px;
+        }     
+    }
+
+      
+} 
+

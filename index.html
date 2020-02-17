@@ -3,38 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Google Fonts-->
-
+    <!--Google Fonts-->    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
     <!--Font Awesome 5.6.3 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!--Mi estilo-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
     <title>Startup Treek-in</title>
 </head>
 <body>
+    
     <!--Navbar-->
-    <nav>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light bg-white">
+        <div class="container navbar__container">
+         <a class="navbar-brand" href="#"><img class="logo" src="assets/img/Logo.svg" alt="logo"></a>
+         <button class="navbar-toggler text-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
 
-    </nav>
+            <ul class="navbar-nav">
+              <li class="nav-item nav__left">
+                <a class="nav-link" href="#about">Acerca de</a>
+              </li>
+              <li class="nav-item nav__left">
+                <a class="nav-link" href="#caracteristicas">Características</a>
+              </li>
+              <li class="nav-item nav__left">
+               <a class="nav-link" href="#precios">Precios</a>
+              </li>          
+            </ul>
+               
+           <ul class="navbar-nav ml-auto">
+               <li class="nav-item nav__rigth">
+                   <a class="nav-link" href="#iniciarsesion">Iniciar Sesión</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#contacto"><button type="button" class="btn btn-primary">Registrarse</button></i></a>
+               </li>
+           </ul>
+          </div>
+        </div>
+    </nav> 
 
     <!--Header-->
-    <header>
-
+    <header class="header header__hero-sec">               
+        <section id="about" class="header__item header__text">
+            <h1>Haz Trekking sin Parar</h1>
+            <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición.</p>
+        </section>
+        <section class="header__img-movil">
+          
+        </section> 
     </header>
-
+    
     <!--Main-->
-    <main>
-        <section>
-
+    <main id="caracteristicas" class="main"> 
+        <section class="main__sec" >
+            <h3>Características</h3>
+            <section class="main__caracteristicas">       
+              <section class="main__caracteristicas-img">
+                <img src="assets/img/bar-graph.svg " alt="price-img">
+              </section>
+                          
+              <section class="main__caracteristicas-text">            
+                <h4>Estadísticas de tu progreso</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consectetur maiores amet, repellendus fugit veritatis. Fugit, officia quaerat enim numquam neque ducimus hic natus exercitationem eveniet vel, ullam perspiciatis repellat!</p>
+              </section>
+            </section>
+        </section>       
+       
+  
+        <section class="precios__hero-sec">
+          <h3 id="precios" class="main__title">Precios</h3>
+          <section  class="main__precios " >         
+  
+            <div class="card text-center main__precios-card1" style="width: 18rem;">
+              <div class="card-body main__card">
+                <h5 class="card-title">Trekk-in Free</h5>                           
+                <h3>$ 0 / mes</h3>
+                <hr>
+                <ul>
+                  <li>Ver mapas creado por usuarios</li>
+                  <li>Concretar con otro usuarios</li>
+                </ul>
+                <hr class="main__card-hr">
+                <a href="#" class="btn btn-primary btn-block">Obtén Free</a>
+              </div>
+            </div>
+  
+            <div class="card text-center main__precios-card2" style="width: 18rem;">
+              <div class="card-body main__card">
+                <h5 class="card-title">Trekk-in Premiun</h5>
+                <h3>$ 3500 / mes</h3>
+                <hr>
+                <ul>
+                  <li>Ver mapas creado por usuarios</li>
+                  <li>Concretar con otros usuarios</li>
+                  <li>Definir mejores rutas</li>
+                  <li>Mapas Offline</li>
+                  <li>Integración con otras aplicaciones</li>
+                </ul>
+                <hr>
+                <a href="#" class="btn btn-primary btn-block">Obtén Premiun</a>
+              </div>
+            </div>
+  
+          </section>
         </section>
+    </main>   
 
-        <section>
-
-        </section>
-    </main>
-    
     <!--Footer-->
-    <footer></footer>
+    <footer class="footer d-flex">
+        <section class="footer__item footer__item-1">
+          <a class="footer__p mr-lg-4" href="">Legal</a>
+          <a class="footer__p ml-2 mr-lg-4" href="">Cookies</a>
+          <a class="footer__p ml-4" href="">Sobre anuncios</a>          
+        </section>        
+                             
+        <section class="footer__item">
+          <a href=""><i class="far fa-copyright"></i>2018 Trekk-in SPA.</a>         
+        </section>  
+      </footer> 
     
+  
+
+  <!--jQuery 3.3.1 sin slim-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!--Popper JS 1.14.3-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!--Bootstrap JS 4.4.1-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Mi script -->
+  <script src="assets/js/script.js"></script>   
+
 </body>
 </html>
